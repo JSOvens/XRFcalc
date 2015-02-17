@@ -25,6 +25,12 @@ shinyUI(fluidPage(
                           "ADD!"))
     ),
     
+    fluidRow(
+      column(12,
+             textOutput("warn1"))
+      
+      ),
+    
     h4("Calculate with respect to:"),
     fluidRow(
       column(6,
@@ -35,16 +41,22 @@ shinyUI(fluidPage(
       column(6,
              actionButton("calcButton",
                           "DO IT!"))
+
     
     ),
     
     fluidRow(
       column(12,
-             textOutput("warn"))
+             textOutput("warn2"))
       
-      )
+      ),
     
-    ),
+    fluidRow(
+      column(12,
+             actionButton("clearButton",
+                          "CLEAR!"))
+    
+    )),
   
   mainPanel(
     
